@@ -1,2 +1,11 @@
-<h1>Trips#show</h1>
-<p>Find me in app/views/trips/show.html.erb</p>
+<h1><%= @trip.name %></h1>
+<hr />
+<p>What would you like to do?</p>
+
+<%= link_to 'View all Trips', trips_path, class:"ui pink button inverted" %>
+<br />
+<%= link_to 'View Locations', trip_locations_path(@trip), class:"ui orange button inverted" %>
+<br />
+<%= link_to 'Edit Trip', edit_trip_path(@trip), class:"ui red button inverted" %>
+<br />
+<%= link_to 'Delete Trip', @trip, method: :delete, class:"ui blue button inverted" %>

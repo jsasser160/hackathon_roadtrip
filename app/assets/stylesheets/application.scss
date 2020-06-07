@@ -13,3 +13,10 @@
  *= require_tree .
  *= require_self
  */
+@import 'semantic-ui';
+
+body {
+  background-image: url('https://static.vecteezy.com/system/resources/previews/000/251/962/original/mountain-landscape-first-person-illustration-vector.jpg') !important;
+  background-size: auto !important;
+  background-attachment:fixed;
+}

@@ -1,2 +1,10 @@
-<h1>Locations#index</h1>
-<p>Find me in app/views/locations/index.html.erb</p>
+<h1 class="ui header"><%= @trip.name %> Trip Stops</h1>
+ <ul>
+  <% @locations.each do |location| %>
+    <li>
+      <%= link_to location.name, [ @trip, location ]%>
+    </li>
+    <% end %>
+ </ul>
+
+ <%= link_to 'Create New Location', new_trip_location_path(@trip) %>
